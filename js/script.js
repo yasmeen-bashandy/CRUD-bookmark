@@ -78,6 +78,7 @@ function searchByName(term){
 
 // set site to user for edit it
 function getUpdateSite(index){
+    // console.log("hhh");
     indexGlobal=index;
     nameInput.value=listOfUrl[index].name;
     urlInput.value=listOfUrl[index].url;
@@ -87,11 +88,11 @@ function getUpdateSite(index){
 
 // display site after edit it
 function setUpdateSite(index){
-    console.log("update");
-    listOfUrl[indexGlobal].name=nameInput.value;
+/    listOfUrl[indexGlobal].name=nameInput.value;
     listOfUrl[indexGlobal].url=urlInput.value;
-    displayData(listOfUrl);
     localStorage.setItem("listOfUrl",JSON.stringify(listOfUrl));
+    displayData(listOfUrl);
+    // console.log(localStorage);
     clearForm();
     addBtn.classList.remove('d-none');
     editBtn.classList.add('d-none');
