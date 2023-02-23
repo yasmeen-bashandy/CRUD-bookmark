@@ -131,7 +131,6 @@ function urlValidation() {
        } else {
         alertExited.classList.add("d-none"); // hide alert url is exite
        }
-
        alertUrl.classList.add("d-none"); //hide alert required
        return true;
     }
