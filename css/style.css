@@ -1,4 +1,14 @@
-.form-project , .output{
-    background-color: #000;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.form-project , .output ,.search-input{
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: #fff;
+    /* box-shadow: -5px 2px 54px -9px; */
 }

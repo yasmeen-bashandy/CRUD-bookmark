@@ -9,7 +9,6 @@ var alertUrl=document.getElementById("alertUrl");
 var alertExited=document.getElementById("alertExited"); 
 var listOfUrl;
 
-
 // get item from localStorage
 if (localStorage.getItem("listOfUrl") == null){
     listOfUrl=[];
@@ -33,7 +32,6 @@ function  addUlr() {
     }
 }
 
-
 // displayData function
 function displayData(site){
     var cartona=``;
@@ -41,8 +39,8 @@ function displayData(site){
         cartona +=`<tr>
         <td>${i+1}</td>
         <td>${listOfUrl[i].newname ?site[i].newname :site[i].name}</td>
-        <td>${listOfUrl[i].url}</td>
-        <td><button onclick="window.open(listOfUrl[${i}].url)" class="btn btn-light btn-sm"><a href="#" target="_blank" class="text-black text-decoration-none">visit</a></button></td>
+        <td class="d-none">${listOfUrl[i].url}</td>
+        <td><button onclick="window.open(listOfUrl[${i}].url)" class="btn btn-light btn-sm "><a href="#" target="_blank" class="text-black text-decoration-none">visit</a></button></td>
         <td><button onclick="getUpdateSite(${i})" class="btn btn-warning btn-sm">Edit</button></td>
         <td><button onclick="deleteData(${i})" class="btn btn-danger btn-sm">Delete</button></td>
     </tr>`
@@ -132,9 +130,10 @@ function urlValidation() {
        } else {
         alertExited.classList.add("d-none"); // hide alert url is exite
        }
- 
+
        alertUrl.classList.add("d-none"); //hide alert required
        return true;
     }
+
+
  }
- 
