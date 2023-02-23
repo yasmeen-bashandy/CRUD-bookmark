@@ -88,7 +88,7 @@ function getUpdateSite(index){
 
 // display site after edit it
 function setUpdateSite(index){
-/    listOfUrl[indexGlobal].name=nameInput.value;
+   listOfUrl[indexGlobal].name=nameInput.value;
     listOfUrl[indexGlobal].url=urlInput.value;
     localStorage.setItem("listOfUrl",JSON.stringify(listOfUrl));
     displayData(listOfUrl);
