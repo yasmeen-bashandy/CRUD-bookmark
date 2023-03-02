@@ -3,12 +3,17 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-.form-project , .output ,.search-input{
-    background-image: url(../img/background.jpg);
+body{
+    background-color: #23906b;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    color: #fff;
+}
+.form-project , .output ,.search-input{
+   
+    color: #000;
     /* box-shadow: -5px 2px 54px -9px; */
+}
+#addBtn{
+    background-color: #b58f36;
 }

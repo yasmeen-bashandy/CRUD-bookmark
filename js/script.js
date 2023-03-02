@@ -40,9 +40,9 @@ function displayData(site){
         <td>${i+1}</td>
         <td>${listOfUrl[i].newname ?site[i].newname :site[i].name}</td>
         <td class="d-none">${listOfUrl[i].url}</td>
-        <td><button onclick="window.open(listOfUrl[${i}].url)" class="btn btn-light btn-sm "><a href="#" target="_blank" class="text-black text-decoration-none">visit</a></button></td>
-        <td><button onclick="getUpdateSite(${i})" class="btn btn-warning btn-sm">Edit</button></td>
-        <td><button onclick="deleteData(${i})" class="btn btn-danger btn-sm">Delete</button></td>
+        <td><button onclick="window.open(listOfUrl[${i}].url)" class="btn btn-light btn-sm "><a href="#" target="_blank" class="text-black text-decoration-none"><i class="fa-solid fa-eye"></i></a></button></td>
+        <td><button onclick="getUpdateSite(${i})" class="btn btn-warning btn-sm"><i class="fa-solid fa-pen-to-square"></i></button></td>
+        <td><button onclick="deleteData(${i})" class="btn btn-danger btn-sm"><i class="fa-solid fa-trash-can"></i></button></td>
     </tr>`
     }
     document.getElementById("tBody").innerHTML=cartona;
